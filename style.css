@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu Sans", sans-serif;
+}
+
+.navContainer{
+    background: black;
+    width: 100%;
+    height:10vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
+}
+.navContainer .navLinks{
+    display: flex;
+    gap:40px;
+    color: white; 
+}
+.navContainer .navLinks a{
+    text-decoration: none;
+    color: white;
+    font-variant: small-caps;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* FORM SECTION */
+.formContainer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 24px; 
+   margin-top: 10vh;
+}
+.formContainer h3{
+    font-size: 32px;
+}
+.formContainer form{
+    width: 40%;
+    border: 1px solid black;
+    padding: 24px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:24px
+}
+.formContainer form .shortInput{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+form label{
+    font-weight: bolder;
+}
+.formContainer form .shortInput .formContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* gap: 5px; */
+    width: 48%;
+}
+.formContainer form .formContent input{
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+.formContainer form .formContent input:focus {
+    outline: none;
+    background: rgb(240, 239, 239);
+}
+
+.formContainer form .longInput{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.formContainer form .longInput .formContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* gap: 5px; */
+    width: 100%;
+}
+
+.formContainer form .CAL{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.formContainer form .CAL button{
+    border: none;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 80px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 400ms all ease;
+}
+.formContainer form .CAL button:hover{
+    border: none;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+
+    padding: 10px 80px;
+    font-size: 20px;
+    transition: 400ms all ease;
+}
+.formContainer form .CAL a{ 
+    text-decoration: none;
+    font-size: 20px;
+    color: red;
+    border: 1px solid red;
+    padding: 10px 86px;
+    transition: 400ms all ease;
+}
+.formContainer form .CAL a:hover{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border: 1px solid red;
+    background-color: red;
+    padding: 10px 86px;
+    transition: 400ms all ease;
+}
